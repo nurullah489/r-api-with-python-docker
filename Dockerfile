@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 
 WORKDIR /srs
 
-COPY requirements.txt /srs/requirements.txt
+COPY requirements.txt /src/requirements.txt
 
 RUN pip3 install -r requirements.txt
 
