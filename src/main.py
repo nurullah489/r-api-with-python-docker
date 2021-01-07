@@ -66,7 +66,7 @@ def make_app():
     app = tornado.web.Application(handlers, debug=True)
     app.executor = concurrent.futures.ThreadPoolExecutor(max_workers=20)
     app.counter = 0
-    app.listen(8124)
+    app.listen(8080)
 
 
 if __name__ == '__main__':

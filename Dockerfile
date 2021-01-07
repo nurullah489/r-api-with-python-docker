@@ -14,4 +14,6 @@ RUN Rscript -e "install.packages('vroom','LaF','dplyr','fs','DataExplorer','jani
 
 COPY . /srs
 
+EXPOSE 8080
+
 CMD [ "python", "./main.py" ]
