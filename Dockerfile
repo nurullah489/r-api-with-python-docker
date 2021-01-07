@@ -8,11 +8,11 @@ WORKDIR /srs
 
 COPY requirements.txt /src/requirements.txt
 
+COPY . /src
+
 RUN pip3 install -r requirements.txt
 
 RUN Rscript -e "install.packages('vroom','LaF','dplyr','fs','DataExplorer','janitor','jsonlite','dplyr')"
-
-COPY . /src
 
 EXPOSE 8080
 
