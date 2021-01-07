@@ -12,7 +12,7 @@ RUN pip3 install -r requirements.txt
 
 RUN Rscript -e "install.packages('vroom','LaF','dplyr','fs','DataExplorer','janitor','jsonlite','dplyr')"
 
-COPY . /srs
+COPY . /src
 
 EXPOSE 8080
 
